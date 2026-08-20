@@ -38,3 +38,17 @@ int insere_lista(lista *L, int elemento) {
 
     return 1;
 }
+
+int buscar_lista(lista *L, int elemento) {
+    if (L == NULL){
+        return 0;
+    }
+
+    for (int i = 0; i <= L->ultimo; i++){
+        if (L->elementos[i] == elemento){
+            return 1;
+        }
+    }
+    return -1;
+}
+
