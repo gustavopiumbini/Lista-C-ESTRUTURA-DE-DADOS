@@ -17,8 +17,24 @@ if (L->elementos == NULL){
 }
 
 L->capacidade = n;
-L->ult_pos = -1;
+L->ultimo = -1;
 
 return L;
 
+}
+
+int insere_lista(lista *L, int elemento) {
+    
+    if (L == NULL){
+        return 0;
+    }
+
+    if (L->ultimo == L->capacidade - 1){
+        return 0;
+    }
+
+    L->ultimo++;
+    L->elementos[L->ultimo] = elemento;
+
+    return 1;
 }

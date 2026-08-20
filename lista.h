@@ -1,6 +1,8 @@
 #ifndef LISTA_H
 #define LISTA_H
 
+#include <stddef.h>
+
 typedef struct {
     size_t capacidade;
     int ultimo;
