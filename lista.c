@@ -52,3 +52,5 @@ int buscar_lista(lista *L, int elemento) {
     return -1;
 }
 
+int remover_lista(lista *L, int elemento)
+
